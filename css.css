@@ -1,0 +1,252 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MENU NAV */
+.nav-menu {
+    background-color: rgb(51, 60, 60);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 5px 0 5px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.nav-menu .nav-menu-item1 {
+    font-size: larger;
+    text-shadow: 0px 1px 2px rgb(64, 64, 64);
+    font-weight: 600;
+    user-select: none;
+}
+
+.nav-menu .nav-menu-item2-ul {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-menu .nav-menu-item2-ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.nav-menu .nav-menu-item2-ul li a {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.nav-menu .nav-menu-item2-ul a {
+    text-decoration: none;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.nav-menu .nav-menu-item2-ul a:hover {
+    color: aliceblue;
+    text-shadow: 0px 0px 7px aliceblue;
+    transition: 0.6s;
+}
+
+
+/* IMGS */
+.imgs,
+.imgs2 {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+}
+
+/* CORPO */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.474);
+    background: linear-gradient(5deg, #fdfdfd, #59a7fb, #fdfdfd);
+
+}
+
+.conteudos-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+}
+
+
+.conteudos-sections-itens-titulo,
+.conteudos-sections-itens-titulo-h1 {
+    padding: 10px 0 10px 0;
+    color: black;
+}
+
+.conteudos-sections-itens-titulo-h1 {
+    background-color: rgb(51, 60, 60);
+    border-radius: 5px;
+    color: aliceblue;
+    margin: 10px;
+    font-size: 2.0rem;
+    padding: 10px;
+}
+
+.conteudos-sections-itens-paragrafo-com-img,
+.conteudos-sections-itens-paragrafo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    color: rgb(15, 15, 15);
+    height: auto;
+}
+
+.conteudos-sections-itens-paragrafo {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.conteudos-sections-itens-paragrafo-data {
+    color: rgb(88, 88, 88);
+    font-size: small;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(51, 60, 60);
+    margin: 8px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sociais {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sociais a {
+    font-size: 2rem;
+    color: #59a7fb;
+}
+
+.rodape {
+    font-size: 0.8rem;
+    padding: 10px;
+    color: aliceblue;
+}
+
+/* MENU MOBILE */
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile: */
+    .conteudos-sections-itens-titulo-h1 {
+        text-align: center;
+    }
+
+    .conteudos-sections-itens-titulo {
+        padding-right: 225px;
+    }
+
+    .conteudos-sections-itens-paragrafo-com-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudos-sections-itens-titulo-h1 {
+        width: 100%;
+    }
+
+    [class*="imgs"] {
+        width: 100%;
+    }
+
+    /* MENU MOBILE */
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon button ion-icon {
+        font-size: 1.8rem;
+        color: aliceblue;
+    }
+
+    .mobile-menu {
+        margin: 0 5px 5px 5px;
+        background-color: rgb(51, 60, 60);
+        border-radius: 5px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .nav-link {
+        color: #fdfdfd;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .icon{
+        gap: 10px;
+    }
+
+    .open {
+        display: block;
+    }
+
+}
